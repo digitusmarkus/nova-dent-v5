@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Nova Dent - Stomatološka Ordinacija Novi Sad</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Nova Dent - Stomatološka Ordinacija" />
+    <meta name="description" content="Moderna stomatološka ordinacija u Novom Sadu. Vrhunska usluga, bezbolni tretmani i tim stručnjaka posvećen vašem osmehu." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nd.digitusmarkus.com/" />
+    <meta property="og:title" content="Nova Dent - Vaš osmeh je naš prioritet" />
+    <meta property="og:description" content="Doživite stomatologiju na novi način. Najsavremenija tehnologija i prijatan ambijent u srcu Novog Sada." />
+    <meta property="og:image" content="https://ik.imagekit.io/digitusmarkus/Nova%20Dent/hero.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nd.digitusmarkus.com/" />
+    <meta property="twitter:title" content="Nova Dent - Stomatološka Ordinacija" />
+    <meta property="twitter:description" content="Vrhunska stomatološka nega i najsavremenija dijagnostika. Zakažite besplatan pregled." />
+    <meta property="twitter:image" content="https://ik.imagekit.io/digitusmarkus/Nova%20Dent/hero.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              teal: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                500: '#14b8a6',
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
+              }
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
