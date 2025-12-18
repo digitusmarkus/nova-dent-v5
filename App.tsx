@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -28,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/o-nama" element={<About />} />
           <Route path="/usluge" element={<Services />} />
           <Route path="/kontakt" element={<Contact />} />
+          {/* Catch-all route to redirect to home if a path doesn't match */}
+          <Route path="*" element={<Home onNavigate={(path) => navigate(path)} />} />
         </Routes>
       </main>
 
