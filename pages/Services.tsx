@@ -58,13 +58,13 @@ const Services: React.FC = () => {
   return (
     <div className="pt-40 pb-24 lg:pt-52 lg:pb-32 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-24 lg:mb-32 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-24 lg:mb-32">
           <span className="text-teal-600 font-semibold tracking-wide uppercase text-sm">Naša Ekspertiza</span>
           <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-8">Sveobuhvatna nega za vaš osmeh</h1>
           <p className="text-xl text-slate-600 mb-12">
             Od preventive do složenih rekonstrukcija, Nova Dent nudi kompletan spektar stomatoloških usluga na jednom mestu.
           </p>
-          <div className="rounded-3xl shadow-xl overflow-hidden group reveal delay-200">
+          <div className="rounded-3xl shadow-xl overflow-hidden group">
             <img 
               src="https://ik.imagekit.io/digitusmarkus/Nova%20Dent/services-banner.jpg" 
               alt="Prikaz stomatoloških instrumenata u ordinaciji" 
@@ -75,8 +75,8 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {servicesList.map((service, idx) => (
-            <div key={service.id} className={`bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 reveal delay-${(idx % 3) * 100}`}>
+          {servicesList.map((service) => (
+            <div key={service.id} className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
               <div className="w-16 h-16 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mb-8">
                 {iconMap[service.iconName] || <Smile size={32} />}
               </div>
@@ -88,8 +88,8 @@ const Services: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA Sekcija */}
-        <div className="mt-32 lg:mt-40 bg-teal-900 rounded-[3rem] p-12 lg:p-20 text-center md:text-left flex flex-col md:flex-row items-center justify-between relative overflow-hidden reveal">
+        {/* CTA Sekcija - Grand spacing */}
+        <div className="mt-32 lg:mt-40 bg-teal-900 rounded-[3rem] p-12 lg:p-20 text-center md:text-left flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
           <div className="relative z-10 max-w-2xl">
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Niste sigurni šta vam je potrebno?</h3>
             <p className="text-teal-100 text-xl leading-relaxed">

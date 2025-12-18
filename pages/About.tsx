@@ -28,8 +28,8 @@ const doctors = [
 const About: React.FC = () => {
   return (
     <div className="pt-40 pb-24 lg:pt-52 lg:pb-32 bg-white relative">
-      {/* Zaglavlje */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 lg:mb-32 reveal">
+      {/* Zaglavlje - More space */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 lg:mb-32">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">O nama</h1>
           <p className="text-xl text-slate-600 leading-relaxed">
@@ -38,10 +38,10 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* Priča sekcija */}
+      {/* Priča sekcija - Increased gap */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32 lg:mb-40 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative group reveal">
+          <div className="relative group">
             <div className="absolute -inset-4 bg-teal-100 rounded-2xl transform rotate-3 -z-10"></div>
             <div className="rounded-2xl shadow-lg overflow-hidden h-[450px]">
               <img 
@@ -51,7 +51,7 @@ const About: React.FC = () => {
               />
             </div>
           </div>
-          <div className="space-y-8 reveal delay-200">
+          <div className="space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Tradicija i inovacija</h2>
             <p className="text-slate-600 text-lg leading-relaxed">
               Naša ordinacija posluje više od 10 godina, neprestano ulažući u edukaciju našeg kadra i modernizaciju opreme. Verujemo da pacijent treba da se oseća kao kod kuće, a ne u kliničkom okruženju.
@@ -74,25 +74,25 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* Vrednosti */}
+      {/* Vrednosti - Standardized 128px spacing */}
       <div className="bg-slate-50 py-24 lg:py-32 mb-32 lg:mb-40 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-             <div className="bg-white p-10 rounded-2xl shadow-sm text-center reveal">
+             <div className="bg-white p-10 rounded-2xl shadow-sm text-center">
                 <div className="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-8">
                   <Users size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Pacijent u centru</h3>
                 <p className="text-slate-600 leading-relaxed">Slušamo vaše želje i strahove kako bismo kreirali najugodnije iskustvo.</p>
              </div>
-             <div className="bg-white p-10 rounded-2xl shadow-sm text-center reveal delay-100">
+             <div className="bg-white p-10 rounded-2xl shadow-sm text-center">
                 <div className="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-8">
                   <Award size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Izvrsnost</h3>
                 <p className="text-slate-600 leading-relaxed">Ne pristajemo na prosečnost. Težimo perfekciji u svakom zahvatu.</p>
              </div>
-             <div className="bg-white p-10 rounded-2xl shadow-sm text-center reveal delay-200">
+             <div className="bg-white p-10 rounded-2xl shadow-sm text-center">
                 <div className="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-8">
                   <BookOpen size={28} />
                 </div>
@@ -105,10 +105,10 @@ const About: React.FC = () => {
 
       {/* Tim sekcija */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pb-12">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 mb-20 reveal">Upoznajte naš tim</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 mb-20">Upoznajte naš tim</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {doctors.map((doc, idx) => (
-            <div key={idx} className={`group relative overflow-hidden rounded-2xl bg-slate-100 aspect-[3/4] reveal delay-${idx * 100}`}>
+            <div key={idx} className="group relative overflow-hidden rounded-2xl bg-slate-100 aspect-[3/4]">
               <img 
                 src={doc.image} 
                 alt={doc.name} 
